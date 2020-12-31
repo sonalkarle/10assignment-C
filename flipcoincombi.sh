@@ -1,6 +1,7 @@
-echo "Welcome"
-#!/usr/bin/bash -x
 
+#!/usr/bin/bash -x
+##Flapping a coin to display Head or Tails
+##Function generated
 function checkResult ()
 {
 	if [ $1 -eq 0 ]
@@ -12,7 +13,7 @@ function checkResult ()
 }
 echo "Welcome To flipCoin simulator"
 
-
+##Computation
 flipTheCoin=y
 
 while [ $flipTheCoin == y ]
