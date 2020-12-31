@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 #!/usr/bin/bash -x
-<<<<<<< HEAD
+
 ##Flapping a coin to display Head or Tails
 ##Function generated
 function checkResult ()
@@ -25,7 +22,7 @@ do
 	random=$(( RANDOM % 2 ))
 	checkResult $random
 read -p "do you wish to flip coin again? (y/n): " flipTheCoin
-=======
+
 ##Store the answer in dictionary
 ##Declare the dictionary
 declare -A singlet
@@ -40,7 +37,7 @@ function checkResult ()
 	esac
 }
 
-=======
+
 #!/bin/bash x
 ##Create Doublet combination and save ans
 ##Declare the dictionary
@@ -58,14 +55,14 @@ function checkResult ()
 	esac
 }
 
->>>>>>> 3_DoubletCombi_UC3
+##3_DoubletCombi_UC3
 echo "Welcome To flipCoin simulator"
 
 
 ##Computation
 while [ $flipTheCoin -le 20 ]
 do
-<<<<<<< HEAD
+
 	random=$(( RANDOM % 2 ))
 	checkResult $random
 	flipTheCoin=$(( $flipTheCoin + 1 ))
@@ -75,8 +72,8 @@ echo "for start"
 for key in ${!singlet[@]}
 do
 	echo "$key : ${singlet[$key]}"
->>>>>>> 2_StoreinDictpercen_UC2
-=======
+##2_StoreinDictpercen_UC2
+
 	random1=$(( RANDOM % 2 ))
 	random2=$(( RANDOM % 2 ))
 	checkResult $random1 $random2
@@ -88,8 +85,8 @@ do
 	statement=`echo | awk -v key="$key" -v value="${doublet[$key]}" '{ percent = (value / 20) * 100 } END { print key " is " percent "%" }'`
 	echo "$statement"
 
->>>>>>> 3_DoubletCombi_UC3
-=======
+##3_DoubletCombi_UC3
+
 #!/bin/bash -x
 ##Create triplet combination
 ##Declare the dictionary
@@ -123,7 +120,7 @@ do
 	checkResult $random1 $random2 $random3
 	flipTheCoin=$(( $flipTheCoin + 1 ))
 done
-=======
+
 
 #!/usr/bin/bash -x
 ##Sort the single doublet and triplet combination and show the result
@@ -187,16 +184,16 @@ done
 
 echo "***Triplet Values in Percentage : "
 
->>>>>>> 5_Sortsingledoublettriplet_UC5
+##5_Sortsingledoublettriplet_UC5
 for key in ${!triplet[@]}
 do
 	statement=`echo | awk -v key="$key" -v value="${triplet[$key]}" '{ percent = (value / 50) * 100 } END { print key " is " percent "%" }'`
 	echo "$statement"
 
-<<<<<<< HEAD
->>>>>>> 4_TripletCombi_UC4
+
+##4_TripletCombi_UC4
 done
-=======
+
 done
 
 echo "***sorted singlet result"
@@ -251,4 +248,4 @@ done | sort -t : -k 2n
 
 
 echo "maximum wining combination in triplet is "$keyMax : $max
->>>>>>> 5_Sortsingledoublettriplet_UC5
+##5_Sortsingledoublettriplet_UC5
