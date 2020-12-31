@@ -1,8 +1,9 @@
-echo "Welcome"
-
+#!/bin/bash -x
+##Create triplet combination
+##Declare the dictionary
 declare -A triplet
 flipTheCoin=1
-
+##generate function
 function checkResult ()
 {
 	case $1$2$3 in
@@ -21,7 +22,7 @@ function checkResult ()
 echo "Welcome To flipCoin simulator for 50 flips"
 
 
-
+##Computation
 while [ $flipTheCoin -le 50 ]
 do
 	random1=$(( RANDOM % 2 ))
