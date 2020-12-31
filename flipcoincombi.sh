@@ -1,5 +1,7 @@
-echo "Welcome"
+
 #!/usr/bin/bash -x
+##Sort the single doublet and triplet combination and show the result
+##Declare all disctionary
 declare -A singlet
 declare -A triplet
 declare -A doublet
@@ -7,7 +9,7 @@ flipTheCoin=1
 
 max=0
 keyMax=h
-
+##genrate function
 function checkResult ()
 {
 	case $1 in
@@ -29,7 +31,7 @@ function checkResult ()
 }
 
 echo "Welcome To flipCoin simulator for 50 flips"
-
+##Computation
 while [ $flipTheCoin -le 50 ]
 do
 
