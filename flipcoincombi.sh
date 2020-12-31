@@ -1,7 +1,9 @@
-echo "Welcome"
+#!/bin/bash x
+##Create Doublet combination and save ans
+##Declare the dictionary
 declare -A doublet
 flipTheCoin=1
-
+##generate function
 function checkResult ()
 {
 	case $1$2 in
@@ -16,7 +18,7 @@ function checkResult ()
 echo "Welcome To flipCoin simulator"
 
 
-
+##Computation
 while [ $flipTheCoin -le 20 ]
 do
 	random1=$(( RANDOM % 2 ))
