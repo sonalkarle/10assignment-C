@@ -1,9 +1,10 @@
-echo "Welcome"
-#!/usr/bin/bash -x
 
+#!/usr/bin/bash -x
+##Store the answer in dictionary
+##Declare the dictionary
 declare -A singlet
 flipTheCoin=1
-
+##define function
 function checkResult ()
 {
 	case $1 in
@@ -16,7 +17,7 @@ function checkResult ()
 echo "Welcome To flipCoin simulator"
 
 
-
+##Computation
 while [ $flipTheCoin -le 20 ]
 do
 	random=$(( RANDOM % 2 ))
